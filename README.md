@@ -21,6 +21,7 @@ This repository contains software components, configuration profiles, and tools 
 
 ## 📁 Directory Structure
 
+```
 ├── config/ # Board-specific configurations and profiles
 ├── drivers/ # Low-level peripheral drivers
 ├── middleware/ # Protocol stacks or libraries (e.g., MQTT, Modbus)
@@ -31,6 +32,7 @@ This repository contains software components, configuration profiles, and tools 
 ├── tests/ # Unit tests and host simulation
 ├── CMakeLists.txt # Build configuration
 └── README.md # Project overview (this file)
+```
 
 ---
 
