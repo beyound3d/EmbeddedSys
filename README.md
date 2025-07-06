@@ -67,7 +67,8 @@ cmake
 
 ### Flash to Device
 
-```make flash
+```
+make flash
 ```
 
 Make sure your device is connected and debugger (e.g., ST-Link, J-Link) is configured properly.
