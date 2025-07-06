@@ -34,6 +34,18 @@ This repository contains software components, configuration profiles, and tools 
 └── README.md # Project overview (this file)
 ```
 
+```
+## ⚙️ Features
+
+- 🔌 **Modular Drivers** for peripherals like GPIO, UART, I2C, SPI, ADC, PWM
+- 🔄 **Middleware Support** (e.g., MQTT, Modbus, BLE, LoRa)
+- ⏱️ **RTOS Ready** with abstraction for FreeRTOS, Zephyr, or custom kernels
+- 🧩 **Configuration Profiles** for easy board and MCU switching
+- 🧪 **Unit Tests & Host Simulation** with stub/mock layers
+- 📖 **In-Repo Documentation** to support architecture understanding and onboarding
+- 🛠️ **Cross-platform Build System** via `CMake` (can support Make or PlatformIO)
+```
+
 ---
 
 ## 🚀 Getting Started
