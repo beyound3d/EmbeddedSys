@@ -21,7 +21,16 @@ This repository contains software components, configuration profiles, and tools 
 
 ## 📁 Directory Structure
 
-
+├── config/ # Board-specific configurations and profiles
+├── drivers/ # Low-level peripheral drivers
+├── middleware/ # Protocol stacks or libraries (e.g., MQTT, Modbus)
+├── rtos/ # RTOS abstraction layer
+├── utils/ # Logging, debugging, timebase, etc.
+├── examples/ # Sample applications and test cases
+├── docs/ # Documentation and design notes
+├── tests/ # Unit tests and host simulation
+├── CMakeLists.txt # Build configuration
+└── README.md # Project overview (this file)
 
 ---
 
@@ -36,11 +45,11 @@ This repository contains software components, configuration profiles, and tools 
 
 ### Build Example (CMake)
 
-```bash
+```
 mkdir build
 cd build
-cmake ..
-make
+cmake
+```
 
 ### Flash to Device
 
@@ -48,5 +57,49 @@ make
 ```
 
 Make sure your device is connected and debugger (e.g., ST-Link, J-Link) is configured properly.
+
+### 🧪 Testing
+Unit tests can be run on host using stubs/mocks. Navigate to the tests/ directory:
+```
+cd tests
+make test
+```
+
+### 📚 Documentation
+Documentation is available in the docs/ folder. Key topics include:
+
+- System Architecture
+- Driver & HAL Layer Design
+- RTOS Integration
+- Debugging & Logging Setup
+- Deployment Guide
+
+### 🖥️ Supported Boards / MCUs
+- STM32F103 (Blue Pill)
+- STM32F4 Discovery
+- ESP32 DevKit
+- NXP LPC1768
+- ✅ Add your own via /config/
+
+### 🔧 Configuration Profiles
+Configuration profiles are defined in the config/ directory. These include:
+- Clock & PLL settings
+- Peripheral enable/disable
+- Linker script and memory layout
+- Startup sequences
+
+Use config/profile_selector.h to switch between board targets.
+
+### 📄 License
+This project is licensed under the MIT License.
+
+### 🤝 Contributing
+Contributions are welcome! Please:
+- Fork the repo
+- Create a feature branch
+- Submit a pull request
+
+See CONTRIBUTING.md for full guidelines.
+
 
 
